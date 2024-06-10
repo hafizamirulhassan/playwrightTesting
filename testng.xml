@@ -32,7 +32,7 @@
         </classes>
     </test>
     <test name="Ecommerce App - Order Page Test Firefox">
-        <parameter name="browser" value="edge"/>
+        <parameter name="browser" value="chromium"/>
         <classes>
             <class name="com.qa.ecommerce.tests.OrderPageTest" />
         </classes>
