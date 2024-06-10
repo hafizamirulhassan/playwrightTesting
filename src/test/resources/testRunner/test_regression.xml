@@ -1,0 +1,22 @@
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+<!--<suite name="Regression Playwright Suite" parallel="tests">-->
+
+<!--    <listeners>-->
+<!--        <listener class-name="com.qa.ecommerce.listerners.ExtentReportListener"/>-->
+<!--    </listeners>-->
+<!--    <test name="Ecommerce App - My Account Page Test Chrome">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="com.qa.ecommerce.tests.MyAccountPageTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Ecommerce App - Order Page Test Firefox">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="com.qa.ecommerce.tests.OrderPageTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+<!--</suite>-->

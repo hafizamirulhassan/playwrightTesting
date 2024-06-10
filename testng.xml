@@ -1,0 +1,41 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+<!--<suite name="All Test Suite">-->
+<!--    <test verbose="2" preserve-order="true" name="D:/playwrightAutomation_POM_SeleniumGrid4">-->
+<!--        <classes>-->
+<!--            <class name="com.qa.ecommerce.tests.MyAccountPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="homePageURLTest"/>-->
+<!--                    <include name="homePageTitleTest"/>-->
+<!--                    <include name="getLoginPageTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="com.qa.ecommerce.tests.OrderPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="navigateToOrderPageTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Playwright Suite" parallel="tests">
+
+    <listeners>
+        <listener class-name="com.qa.ecommerce.listerners.ExtentReportListener"/>
+    </listeners>
+    <test name="Ecommerce App - My Account Page Test Chrome">
+        <parameter name="browser" value="chromium"/>
+        <classes>
+            <class name="com.qa.ecommerce.tests.MyAccountPageTest" />
+        </classes>
+    </test>
+    <test name="Ecommerce App - Order Page Test Firefox">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="com.qa.ecommerce.tests.OrderPageTest" />
+        </classes>
+    </test>
+
+</suite>
